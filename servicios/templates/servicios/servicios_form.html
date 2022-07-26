@@ -6,19 +6,26 @@
 
 {% block content %}
 
-<p>1</p>
-<p>2</p>
-<p>3</p>
-<p>4</p>
-<hr>
+<!-- Header-->    
+<header class="nosotros" style="background-image: url({% static 'core/assets/img/about-bg.jpeg' %})">
+</header>
+<section class="page-section" id="valores">
+    <div class="container px-4 px-lg-5">
+        <h2 class="text-center mt-0">Agregar servicios</h2>
+        <hr class="divider" />
+    </div>
 
-<form class="" method="post">
-    {% csrf_token %}
+<!-- formulario--> 
+<div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+    <div class="col-lg-6">
 
-    {{form.as_p}}
-    
-    <input type="submit" value="enviar">
-</form>
+        <form class="" method="post">
+            {% csrf_token %}
+
+            {{form.as_p}}
+            
+            <input type="submit" value="enviar">
+        </form>
 
 
 
